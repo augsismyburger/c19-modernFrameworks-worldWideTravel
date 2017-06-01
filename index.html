@@ -4,15 +4,7 @@
 	<title>World Wide Travel</title>
 </head>
 <body ng-app="BookApp">
-    <div ng-controller="bookCtrl">
-        <div ng-repeat="item in books | orderBy: 'title'">
-            <h3>{{item.title}}</h3>
-            <p>Book Type: {{item.type}}</p>
-            <p>Price: {{item.price | currency}}</p>
-            <hr>
-        </div>
-
-    </div>
+    <div ng-view></div>
 
 
 	<script type="text/javascript" src="lib/node_modules/jquery/dist/jquery.min.js"></script>

@@ -1,0 +1,6 @@
+<div ng-repeat="item in books | orderBy: 'title'">
+    <h3>{{item.title}}</h3>
+    <p>Book Type: {{item.type}}</p>
+    <p>Price: {{item.price | currency}}</p>
+    <hr>
+</div>
